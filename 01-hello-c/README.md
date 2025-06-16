@@ -23,6 +23,27 @@ int main() {
 | 4️⃣ 链接  | `ld`  | 与标准库链接生成可执行文件 | `gcc hello.o -o hello`      | `hello`   |
 
 
+
+##实际命令执行
+
+# 进入工作目录
+cd ~/for-learn/01-hello-c
+
+# 1. 预处理
+gcc -E hello.c -o hello.i
+
+# 2. 编译
+gcc -S hello.i -o hello.s
+
+# 3. 汇编
+gcc -c hello.s -o hello.o
+
+# 4. 链接
+gcc hello.o -o hello
+
+# 运行
+./hello
+
 执行结果
 $ ./hello
 Hello, world!
