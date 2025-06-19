@@ -1,0 +1,11 @@
+Script started on 2025-06-19 13:31:39+09:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="120" LINES="36"]
+[?2004h]0;ltece@DESKTOP-2SL9S2L: ~/for-learn/kernel-memory-test[01;32mltece@DESKTOP-2SL9S2L[00m:[01;34m~/for-learn/kernel-memory-test[00m$ [7mgcc access_kernel_memory.c -o access_kernel_memory[27m
+[7m./access_kernel_memory[27m
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc access_kernel_memory.c -o access_kernel_memory
+./access_kernel_memory
+[A
+[?2004lSegmentation fault (core dumped)
+[?2004h]0;ltece@DESKTOP-2SL9S2L: ~/for-learn/kernel-memory-test[01;32mltece@DESKTOP-2SL9S2L[00m:[01;34m~/for-learn/kernel-memory-test[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2025-06-19 13:31:51+09:00 [COMMAND_EXIT_CODE="139"]
