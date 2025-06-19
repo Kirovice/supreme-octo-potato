@@ -1,0 +1,32 @@
+Already logging to call_stack_log.txt.
+Breakpoint 1 at 0x11e1: file call_stack.c, line 15.
+Starting program: /home/ltece/for-learn/stack/call_stack 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Breakpoint 1, main () at call_stack.c:15
+15	    printf("In main\n");
+0x00007ffff7c87bf8 in __GI__IO_puts (str=0x555555556030 "In main") at ./libio/ioputs.c:35
+warning: 35	./libio/ioputs.c: No such file or directory
+#0  0x00007ffff7c87bf8 in __GI__IO_puts (str=0x555555556030 "In main") at ./libio/ioputs.c:35
+#1  0x00005555555551f0 in main () at call_stack.c:15
+Stack level 0, frame at 0x7fffffffdf70:
+ rip = 0x7ffff7c87bf8 in __GI__IO_puts (./libio/ioputs.c:35); saved rip = 0x5555555551f0
+ called by frame at 0x7fffffffdf80
+ source language c.
+ Arglist at 0x7fffffffdf60, args: str=0x555555556030 "In main"
+ Locals at 0x7fffffffdf60, Previous frame's sp is 0x7fffffffdf70
+ Saved registers:
+  rbx at 0x7fffffffdf38, rbp at 0x7fffffffdf60, r12 at 0x7fffffffdf40, r13 at 0x7fffffffdf48, r14 at 0x7fffffffdf50, r15 at 0x7fffffffdf58, rip at 0x7fffffffdf68
+result = -1
+len = <optimized out>
+__strlen_evex () at ../sysdeps/x86_64/multiarch/strlen-evex-base.S:72
+warning: 72	../sysdeps/x86_64/multiarch/strlen-evex-base.S: No such file or directory
+73	in ../sysdeps/x86_64/multiarch/strlen-evex-base.S
+#0  __strlen_evex () at ../sysdeps/x86_64/multiarch/strlen-evex-base.S:73
+#1  0x00007ffff7c87bfd in __GI__IO_puts (str=0x555555556030 "In main") at ./libio/ioputs.c:35
+#2  0x00005555555551f0 in main () at call_stack.c:15
+No locals.
+Warning: 'set logging off', an alias for the command 'set logging enabled', is deprecated.
+Use 'set logging enabled off'.
+
